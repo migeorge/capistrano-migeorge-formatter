@@ -1,4 +1,4 @@
-# Capistrano Compact Formatter
+# Capistrano MiGeorge Formatter
 
 Custom formatter for Capistrano 3, with compact output, and opinionated according to my own needs.
 
@@ -20,12 +20,12 @@ Sample output:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-compact-formatter'
+gem 'capistrano-migeorge-formatter'
 ```
 
 Or install it yourself as:
 
-    $ gem install capistrano-compact-formatter
+    $ gem install capistrano-migeorge-formatter
 
 ## Usage
 
@@ -34,7 +34,7 @@ And require it in your `Capfile`
 ```ruby
 # Capfile
 
-require 'capistrano-compact-formatter'
+require 'capistrano-migeorge-formatter'
 ```
 
 Then in your `config/deploy.rb`, specify the formatter to use:

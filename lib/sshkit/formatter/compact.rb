@@ -37,7 +37,7 @@ module SSHKit
         @stderr << formatted_stream(command.stderr)
 
         if command.finished?
-          original_output << c.bold { command.failure? ? c.red('failure') : c.green('success') }
+          original_output << c.bold { command.failure? ? c.red('\u2717') : c.green('\u2713') }
           original_output << "\n"
 
           if command.failure?
@@ -53,7 +53,7 @@ module SSHKit
       end
 
       def write_log_message(log_message)
-        original_output << "  #{log_message.to_s}"
+        original_output << "\n-> #{log_message.to_s}\n"
       end
 
       def c

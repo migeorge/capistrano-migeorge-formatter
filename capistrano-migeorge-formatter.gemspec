@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'capistrano-compact-formatter/version'
+require 'capistrano-migeorge-formatter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano-compact-formatter'
-  spec.version       = CapistranoCompactFormatter::VERSION
-  spec.authors       = ['Miguel Palhas']
-  spec.email         = ['mpalhas@gmail.com']
-  spec.summary       = %q{A compact formatter for capistrano 3}
-  spec.description   = %q{A compact formatter for capistrano 3}
-  spec.homepage      = 'https://github.com/naps62/capistrano-compact-formatter'
+  spec.name          = 'capistrano-migeorge-formatter'
+  spec.version       = CapistranoMigeorgeFormatter::VERSION
+  spec.authors       = ['Miguel Palhas', 'Mike George']
+  spec.email         = ['mike@tallduck.com']
+  spec.summary       = %q{A compact custom formatter for capistrano 3}
+  spec.description   = %q{A compact custom formatter for capistrano 3}
+  spec.homepage      = 'https://github.com/migeorge/capistrano-migeorge-formatter'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
