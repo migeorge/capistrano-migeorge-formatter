@@ -37,7 +37,7 @@ module SSHKit
         @stderr << formatted_stream(command.stderr)
 
         if command.finished?
-          original_output << c.bold { command.failure? ? c.red('\u2717') : c.green('\u2713') }
+         original_output << c.bold { command.failure? ? c.red('\xe2\x9C\x97') : c.green('\xe2\x9c\x93') }
           original_output << "\n"
 
           if command.failure?
